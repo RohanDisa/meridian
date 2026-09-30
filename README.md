@@ -159,7 +159,7 @@ Tool-layer: README example questions through `_run_named_tool` (no LLM). Extract
 | Extraction accuracy | Stored drawing and link counts. No separate hand-labelled score file. | 30 / 30 drawings have a title (22 `pdf_text`, 8 `vision_review`). 8 / 8 degraded-only sheets are `low` confidence. `drawing_bom_links` has 40 rows for those 30 drawings: 7 confirmed, 2 conflict, 15 candidate, and 16 unmatched (drawing with no BOM row). 125 drawing claims. |
 | Latency | Wall time per Groq turn (12 turns) | Median 39 s, p95 49 s |
 | Cost | Groq `openai/gpt-oss-120b` | $0. 128,002 tokens (median 10,382 per turn). |
-| Reproducibility | Recoater-head material and laser-power questions, each asked 5| 2 / 2 same tools and same citations |
+| Reproducibility | Recoater-head material and laser-power questions, each asked 5 times| 2 / 2 same tools and same citations |
 
 ## Limitations and error analysis
 
