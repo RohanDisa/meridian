@@ -1,0 +1,71 @@
+{
+  "drawing_id": "D-016",
+  "label": "Galvo Bundplade",
+  "shape": "rect",
+  "width_mm": 200.0,
+  "height_mm": 283.5,
+  "thickness_mm": 10.0,
+  "corner_radius_mm": 15.0,
+  "density_g_cm3": 2.81,
+  "title_weight_g": 1118.1,
+  "holes": [
+    {
+      "x": 100.0,
+      "y": 95.0,
+      "d": 145.0
+    },
+    {
+      "x": 25.0,
+      "y": 250.0,
+      "d": 6.0
+    },
+    {
+      "x": 175.0,
+      "y": 250.0,
+      "d": 6.0
+    },
+    {
+      "x": 25.0,
+      "y": 200.0,
+      "d": 4.5
+    },
+    {
+      "x": 175.0,
+      "y": 200.0,
+      "d": 4.5
+    }
+  ],
+  "assumptions": [
+    "Thickness taken from the 10.0 side view.",
+    "\u00d8145 opening placed on the vertical centerline in the lower half.",
+    "Only a subset of the small thru holes is modeled."
+  ],
+  "disclaimer": "Reconstruction from 2D evidence (D-016). Not native CAD. Hole positions and omitted features may be approximate.",
+  "dimensions_used": [
+    {
+      "value": "200 mm",
+      "drawing_id": "D-016",
+      "page": 1
+    },
+    {
+      "value": "283.5 mm",
+      "drawing_id": "D-016",
+      "page": 1
+    },
+    {
+      "value": "10 mm",
+      "drawing_id": "D-016",
+      "page": 1
+    },
+    {
+      "value": "145 mm",
+      "drawing_id": "D-016",
+      "page": 1
+    },
+    {
+      "value": "4.5 mm",
+      "drawing_id": "D-016",
+      "page": 1
+    }
+  ]
+}

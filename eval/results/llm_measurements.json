@@ -1,0 +1,337 @@
+{
+  "started_at": "2026-09-30T08:56:47.339764+00:00",
+  "model": "openai/gpt-oss-120b",
+  "provider": "groq",
+  "sleep_s": 15,
+  "stopped": null,
+  "e2e_pass": 7,
+  "e2e_n": 7,
+  "abstention_pass": 3,
+  "abstention_n": 3,
+  "latency_median_ms": 38886,
+  "latency_p95_ms": 48865,
+  "tokens_total": 128002,
+  "tokens_per_turn_median": 10382,
+  "cost_usd": 0,
+  "cost_note": "Groq openai/gpt-oss-120b, no paid invoice in this run",
+  "repro": [
+    {
+      "base": "e2e-02",
+      "repeat": "repro-02a",
+      "same_tools": true,
+      "same_citations": true,
+      "match": true
+    },
+    {
+      "base": "e2e-08",
+      "repeat": "repro-08a",
+      "same_tools": true,
+      "same_citations": true,
+      "match": true
+    }
+  ],
+  "repro_match": 2,
+  "repro_n": 2,
+  "rows": [
+    {
+      "id": "e2e-01",
+      "group": "e2e",
+      "q": "Show me the Build Plate",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 75296,
+      "tokens": 15014,
+      "llm_calls": 4,
+      "tools": [
+        "find_part",
+        "get_part_facts",
+        "open_visual"
+      ],
+      "attachments": [
+        "D-026"
+      ],
+      "citation_keys": [
+        "bom_row|D-026|56|48|material_raw|Build Plate",
+        "bom_row|D-026|56|48|name|Build Plate",
+        "bom_row|D-026|56|48|name|Build Plate",
+        "correction||||material|",
+        "drawing|D-026|||id|",
+        "drawing|D-026|||material|",
+        "drawing|D-026|||path|"
+      ],
+      "uncertainty": null,
+      "text": "Build Plate is now recorded as AISI 316, set by correction #1 reviewed on 2026‑09‑30. The original BOM entry listed the material as “Stainless steel,Steel” (file line 56, csv line 48). The drawing D‑026 titles the sheet “AISI 316 Stainless Steel Sheet (SS)”. The earlier disagreement between the BOM wording and the drawing has been resolved by that correction. The link to drawing D‑026 is unverified. The drawing shows a single‑sheet plate; there is no native 3D CAD file, only a stored reconstruct"
+    },
+    {
+      "id": "e2e-02",
+      "group": "e2e",
+      "q": "What material is the recoater head?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 48865,
+      "tokens": 10690,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row|D-013|33|28|material_raw|Recoater head",
+        "bom_row|D-013|33|28|name|Recoater head",
+        "bom_row|D-013|37|31|material_raw|Recoater stage plate",
+        "drawing|D-013|||id|",
+        "drawing|D-013|||material|"
+      ],
+      "uncertainty": null,
+      "text": "The BOM records the material for the Recoater head as Aluminium on file_line 33 (CSV line 28). The same drawing D‑013 is also linked to the Recoater stage plate on file_line 37 (CSV line 31), which also lists Aluminium in the BOM. The drawing title block for D‑013 records the material as 3.3315 (EN‑AW 5005). The two strings differ; the drawing provides a more specific aluminium alloy grade than the generic “Aluminium” entry in the BOM. This disagreement is recorded as a conflict."
+    },
+    {
+      "id": "e2e-03",
+      "group": "e2e",
+      "q": "Which parts use drawing D-013?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 2508,
+      "tokens": 6759,
+      "llm_calls": 2,
+      "tools": [
+        "find_part"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row|D-013|33|28|name|Recoater head",
+        "bom_row|D-013|37|31|name|Recoater stage plate",
+        "drawing|D-013|||id|",
+        "drawing|D-013|||id|"
+      ],
+      "uncertainty": null,
+      "text": "The drawing D‑013 is linked to two parts in the BOM.\n\n- Recoater head on CSV line 28.  \n- Recoater stage plate on CSV line 31."
+    },
+    {
+      "id": "e2e-04",
+      "group": "e2e",
+      "q": "What does D-022 show?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 46717,
+      "tokens": 9765,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "open_visual"
+      ],
+      "attachments": [
+        "D-022"
+      ],
+      "citation_keys": [
+        "drawing|D-022|||id|",
+        "drawing|D-022|||path|"
+      ],
+      "uncertainty": null,
+      "text": "The drawing D-022 is titled “Inlet Box”. It shows the layout and details of the inlet box assembly. No 3‑D reconstruction is stored for this sheet."
+    },
+    {
+      "id": "e2e-05",
+      "group": "e2e",
+      "q": "Which parts are made of aluminium?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 36282,
+      "tokens": 10263,
+      "llm_calls": 2,
+      "tools": [
+        "parts_by_material"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row|D-005|16|16|material_raw|Window Frame",
+        "bom_row|D-010|57|49|material_raw|Motor plate",
+        "bom_row|D-011|35|30|material_raw|Recoater Arm",
+        "bom_row|D-012|38|32|material_raw|Recoater mount block",
+        "bom_row|D-013|33|28|material_raw|Recoater head",
+        "bom_row|D-013|37|31|material_raw|Recoater stage plate",
+        "bom_row|D-020|88|80|material_raw|F-theta seal ring",
+        "bom_row|D-023|54|46|material_raw|Build cylinder",
+        "bom_row|D-024|55|47|material_raw|Build base",
+        "bom_row|D-027|58|50|material_raw|Build cylinder clamp ring",
+        "bom_row|D-028|59|51|material_raw|Heating element plate",
+        "bom_row||100|90|material_raw|Powder roller",
+        "bom_row||104|92|material_raw|Powder roller housing",
+        "bom_row||107|95|material_raw|Powder Valve Fitting",
+        "bom_row||112|100|material_raw|Dispenser drum coupling",
+        "bom_row||11|11|material_raw|Front Door",
+        "bom_row||13|13|material_raw|Print Platform",
+        "bom_row||17|17|material_raw|Back Door",
+        "bom_row||23|23|material_raw|2020 internal profile",
+        "bom_row||29|24|material_raw|2020 angle bracket",
+        "bom_row||34|29|material_raw|Recoater Clamp",
+        "bom_row||46|39|material_raw|Timing pulley Ø6.35 T5",
+        "bom_row||48|40|material_raw|Timing belt idler Ø8 T5",
+        "bom_row||51|43|material_raw|Timing belt clamp plate",
+        "bom_row||60|52|material_raw|Thermocouple plate",
+        "bom_row||61|53|material_raw|Seal clamp plate",
+        "bom_row||72|64|material_raw|Gas blower",
+        "bom_row||87|79|material_raw|Sunny Galvo Adapter Plate",
+        "bom_row||89|81|material_raw|Galvo box bracket"
+      ],
+      "uncertainty": null,
+      "text": "2020 internal profile on CSV line 23 is recorded as Aluminium.  \n2020 angle bracket on CSV line 24 is recorded as Aluminium.  \nBack Door on CSV line 17 is recorded as Aluminium.  \nFront Door on CSV line 11 is recorded as Aluminium.  \nPrint Platform on CSV line 13 is recorded as Aluminium.  \nWindow Frame on CSV line 16 is recorded as Aluminium and is linked to drawing D‑005; the drawing link is unverified.  \nRecoater Clamp on CSV line 29 is recorded as Aluminium.  \nRecoater Arm on CSV line 30 is "
+    },
+    {
+      "id": "e2e-06",
+      "group": "e2e",
+      "q": "What does the left side box interface with?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 46072,
+      "tokens": 10569,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "interfaces_of"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row||10|10|interface_with_raw|",
+        "bom_row||10|10|interface_with_raw|",
+        "bom_row||10|10|interface_with_raw|",
+        "bom_row||10|10|interface_with_raw|",
+        "bom_row||10|10|name|Left Side Box"
+      ],
+      "uncertainty": null,
+      "text": "The BOM entry on file line 10 records that Left Side Box interfaces with Back Box, Front Side Box, Print Platform and Top Side."
+    },
+    {
+      "id": "e2e-07",
+      "group": "e2e",
+      "q": "What did the front door latch cost and who supplied it?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 15120,
+      "tokens": 10164,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row||22|22|material_raw|Front door latch",
+        "bom_row||22|22|name|Front door latch"
+      ],
+      "uncertainty": null,
+      "text": "The front door latch is recorded with a cost of DKK225.00 on file_line 22. The supplier listed for this part on the same line is Misumi."
+    },
+    {
+      "id": "e2e-08",
+      "group": "abstention",
+      "q": "What laser power does the machine use?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 15738,
+      "tokens": 10198,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row||94|84|material_raw|Laser source",
+        "bom_row||94|84|name|Laser source"
+      ],
+      "uncertainty": null,
+      "text": "The BOM entry for the Laser source does not include a recorded laser‑power value. No drawing is linked to that part, so the corpus contains no information about the machine’s laser power."
+    },
+    {
+      "id": "abs-16",
+      "group": "abstention",
+      "q": "what does the window frame connect to",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 14971,
+      "tokens": 10009,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "interfaces_of"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row|D-005|16|16|name|Window Frame",
+        "drawing|D-005|||id|"
+      ],
+      "uncertainty": null,
+      "text": "The Window Frame (CSV line 16) is linked to drawing D‑005, but that link is unverified. No interfaces or connections to other parts are recorded for this part."
+    },
+    {
+      "id": "abs-18",
+      "group": "abstention",
+      "q": "what is the mass of the front door",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 43697,
+      "tokens": 10502,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row||11|11|material_raw|Front Door",
+        "bom_row||11|11|name|Front Door",
+        "bom_row||21|21|name|Front door hinge",
+        "bom_row||22|22|name|Front door latch"
+      ],
+      "uncertainty": null,
+      "text": "The BOM does not record a mass for the Front Door. The entry on file_line 11 lists the material as Aluminium, but no weight or mass value is provided."
+    },
+    {
+      "id": "repro-02a",
+      "group": "repro",
+      "q": "What material is the recoater head?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 41490,
+      "tokens": 13137,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row|D-013|33|28|material_raw|Recoater head",
+        "bom_row|D-013|33|28|name|Recoater head",
+        "bom_row|D-013|37|31|material_raw|Recoater stage plate",
+        "drawing|D-013|||id|",
+        "drawing|D-013|||material|"
+      ],
+      "uncertainty": null,
+      "text": "Two BOM rows point at drawing D‑013. The row for Recoater head starts on file_line 33 (CSV line 28) and the row for Recoater stage plate starts on file_line 37 (CSV line 31). Both rows record the material as Aluminium. The drawing title block records the material as 3.3315 (EN‑AW 5005). The two strings do not match; the drawing designation is a more specific grade of the same aluminium alloy."
+    },
+    {
+      "id": "repro-08a",
+      "group": "repro",
+      "q": "What laser power does the machine use?",
+      "pass": true,
+      "fails": [],
+      "elapsed_ms": 25641,
+      "tokens": 10932,
+      "llm_calls": 3,
+      "tools": [
+        "find_part",
+        "get_part_facts"
+      ],
+      "attachments": [],
+      "citation_keys": [
+        "bom_row||94|84|material_raw|Laser source",
+        "bom_row||94|84|name|Laser source"
+      ],
+      "uncertainty": null,
+      "text": "The BOM entry for the Laser source (file line 94, CSV line 84) does not include a recorded power specification. No drawing is linked to that part, so the corpus contains no laser‑power value for the machine."
+    }
+  ]
+}

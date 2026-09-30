@@ -1,0 +1,13 @@
+.venv/
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/meridian.sqlite
+data/extracts/*.png
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+.env
+project-meridian/
+project-meridian.zip

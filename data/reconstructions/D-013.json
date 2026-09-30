@@ -1,0 +1,90 @@
+{
+  "drawing_id": "D-013",
+  "label": "Recoater Plate",
+  "shape": "rect",
+  "width_mm": 270.0,
+  "height_mm": 25.0,
+  "thickness_mm": 6.0,
+  "corner_radius_mm": 4.5,
+  "density_g_cm3": 2.7,
+  "title_weight_g": 87.5,
+  "holes": [
+    {
+      "x": 20.0,
+      "y": 12.5,
+      "d": 4.2
+    },
+    {
+      "x": 250.0,
+      "y": 12.5,
+      "d": 4.2
+    },
+    {
+      "x": 55.0,
+      "y": 6.0,
+      "d": 2.5
+    },
+    {
+      "x": 55.0,
+      "y": 19.0,
+      "d": 2.5
+    },
+    {
+      "x": 215.0,
+      "y": 6.0,
+      "d": 2.5
+    },
+    {
+      "x": 215.0,
+      "y": 19.0,
+      "d": 2.5
+    }
+  ],
+  "slots": [
+    {
+      "x": 90.0,
+      "y": 12.5,
+      "w": 10.0,
+      "h": 5.5
+    },
+    {
+      "x": 180.0,
+      "y": 12.5,
+      "w": 10.0,
+      "h": 5.5
+    }
+  ],
+  "assumptions": [
+    "Thickness taken from the 6.0 side-view dimension.",
+    "Slot and small-hole coordinates are estimated from the front view.",
+    "Not every M3 hole is modeled."
+  ],
+  "disclaimer": "Reconstruction from 2D evidence (D-013). Not native CAD. Hole positions and omitted features may be approximate.",
+  "dimensions_used": [
+    {
+      "value": "270 mm",
+      "drawing_id": "D-013",
+      "page": 1
+    },
+    {
+      "value": "25 mm",
+      "drawing_id": "D-013",
+      "page": 1
+    },
+    {
+      "value": "6 mm",
+      "drawing_id": "D-013",
+      "page": 1
+    },
+    {
+      "value": "4.2 mm",
+      "drawing_id": "D-013",
+      "page": 1
+    },
+    {
+      "value": "2.5 mm",
+      "drawing_id": "D-013",
+      "page": 1
+    }
+  ]
+}

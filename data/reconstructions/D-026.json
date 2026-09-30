@@ -1,0 +1,55 @@
+{
+  "drawing_id": "D-026",
+  "label": "Build Plate",
+  "shape": "disk",
+  "diameter_mm": 250.0,
+  "thickness_mm": 15.0,
+  "density_g_cm3": 8.0,
+  "title_weight_g": 7822.5,
+  "holes": [
+    {
+      "x": 125.0,
+      "y": 230.0,
+      "d": 5.3
+    },
+    {
+      "x": 34.067332602633954,
+      "y": 72.49999999999999,
+      "d": 5.3
+    },
+    {
+      "x": 215.93266739736603,
+      "y": 72.49999999999994,
+      "d": 5.3
+    }
+  ],
+  "assumptions": [
+    "Thickness taken from the 15.0 side-view dimension, not the 25.0 adjacent number.",
+    "Three \u00d85.3 holes placed on the labeled R105 pitch circle at 120\u00b0.",
+    "Counterbore \u00d810.0 / 15.4 is omitted.",
+    "Title-block weight 7822.5 g is higher than a \u00d8250 x 15 AISI 316 disk; the mismatch is kept visible."
+  ],
+  "disclaimer": "Reconstruction from 2D evidence (D-026). Not native CAD. Hole positions and omitted features may be approximate.",
+  "dimensions_used": [
+    {
+      "value": "250 mm",
+      "drawing_id": "D-026",
+      "page": 1
+    },
+    {
+      "value": "15 mm",
+      "drawing_id": "D-026",
+      "page": 1
+    },
+    {
+      "value": "5.3 mm",
+      "drawing_id": "D-026",
+      "page": 1
+    },
+    {
+      "value": "R105 mm",
+      "drawing_id": "D-026",
+      "page": 1
+    }
+  ]
+}

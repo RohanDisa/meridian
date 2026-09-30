@@ -1,0 +1,12 @@
+These 10 were not in the 30-query eval. Ask them in the app; do not expect a prior score.
+
+1. does the back boxx talk to the rite box or is that just the print platfrm
+2. whats the powder canister made of and is that from the sheet or the BOM
+3. who lists the f-theta as an interface
+4. open the inlet box sheet if we even have one
+5. is the recoater wall on a drawing or only in the spreadsheet
+6. are D-013 and D-014 the same plate or two different claims
+7. what does the laser source actually interface with
+8. tell me abt the tangental blower and who mentions it
+9. does the front side box share a drawing with the print platfrm
+10. anything conected to the gas blower besides the obvious gas stuff

@@ -1,0 +1,50 @@
+{
+  "D-001": {
+    "title": "Door - x2",
+    "material": "Aluminium",
+    "notes": "Door - x2, 3mm aluminium",
+    "confidence": "low"
+  },
+  "D-003": {
+    "title": "20mm thick aluminium plate",
+    "material": "Aluminium",
+    "notes": "All threaded holes are blind. 20mm thick aluminium plate.",
+    "confidence": "low"
+  },
+  "D-009": {
+    "title": "Powder canister",
+    "material": "Non-magnetic stainless",
+    "notes": "Powder canister, non-magnetic stainless. Wall thickness as thin as possible. Must be powder tight.",
+    "confidence": "low"
+  },
+  "D-011": {
+    "title": "Recoater Arm",
+    "material": "7075-T6",
+    "notes": "Alu. Arm for linear guide. Title block reads RecoaterArm.",
+    "confidence": "low"
+  },
+  "D-020": {
+    "title": "Seal Ring",
+    "material": "6061 aluminium",
+    "notes": "Ring with o-ring groove. Aluminium. Title block reads SealRing. Material 6061 alloy.",
+    "confidence": "low"
+  },
+  "D-022": {
+    "title": "Inlet Box",
+    "material": "Stainless",
+    "notes": "Inlet Box. Four corner joints should be welded. Stainless. Free choice of thickness.",
+    "confidence": "low"
+  },
+  "D-023": {
+    "title": "Bygge Cylinder",
+    "material": "EN AW-6082",
+    "notes": "Based on Ø280 mm, t=15 mm EN AW-6082 tube. Title block reads Byggecylinder.",
+    "confidence": "low"
+  },
+  "D-030": {
+    "title": "Z-axis Motor plate",
+    "material": "Aluminium",
+    "notes": "Z-axis Motorplate, aluminium. Title block spaces were crushed on the scan.",
+    "confidence": "low"
+  }
+}

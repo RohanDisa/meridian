@@ -1,0 +1,79 @@
+{
+  "drawing_id": "D-015",
+  "label": "Silikone Wiper",
+  "shape": "rect",
+  "width_mm": 270.0,
+  "height_mm": 14.0,
+  "thickness_mm": 1.0,
+  "density_g_cm3": 1.15,
+  "title_weight_g": 4.6,
+  "holes": [
+    {
+      "x": 12.0,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 47.142857142857146,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 82.28571428571429,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 117.42857142857144,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 152.57142857142858,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 187.71428571428572,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 222.8571428571429,
+      "y": 7.0,
+      "d": 3.4
+    },
+    {
+      "x": 258.0,
+      "y": 7.0,
+      "d": 3.4
+    }
+  ],
+  "assumptions": [
+    "Eight \u00d83.4 holes spaced evenly along the 270 mm centerline.",
+    "End inset of 12 mm is estimated from the view, not a labeled spacing."
+  ],
+  "disclaimer": "Reconstruction from 2D evidence (D-015). Not native CAD. Hole positions and omitted features may be approximate.",
+  "dimensions_used": [
+    {
+      "value": "270 mm",
+      "drawing_id": "D-015",
+      "page": 1
+    },
+    {
+      "value": "14 mm",
+      "drawing_id": "D-015",
+      "page": 1
+    },
+    {
+      "value": "1 mm",
+      "drawing_id": "D-015",
+      "page": 1
+    },
+    {
+      "value": "3.4 mm",
+      "drawing_id": "D-015",
+      "page": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "D-014": {
+    "bom_name": "Recoater stage plate",
+    "status": "confirmed",
+    "evidence": "Filename RecoaterStagePlate.pdf matches the unused Recoater stage plate row. D-013 remains a datasheet conflict."
+  }
+}
