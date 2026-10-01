@@ -176,7 +176,3 @@ Tool-layer: README example questions through `_run_named_tool` (no LLM). Extract
 ## Saved output
 
 `docs/` contains screenshots of the app, including the 2D drawings and 3D reconstructions for the four reconstructed parts.
-
-## Attribution
-
-The dataset is third-party open hardware material. See `ATTRIBUTION.md` and the included license. Do not publish this code or its results without that attribution.
